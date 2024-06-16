@@ -211,6 +211,7 @@ dialog {
   background-color: #f0f3e0;
   padding: 10px 20px;
   width: 40%;
+  min-width: 350px;
   margin: auto;
   margin-top: 15vh;
   position: relative;
@@ -291,4 +292,12 @@ dialog {
   outline: 1px solid #f0f3e0;
   padding: 10px 15px;
   background-color: #333;
+}
+
+.boton-registrar {
+  background-color: #8e5c57;
+}
+
+.content--registrar {
+  margin-top: 3vh;
 }
