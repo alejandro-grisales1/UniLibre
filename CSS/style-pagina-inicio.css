@@ -13,6 +13,7 @@ header {
 
 .contenedor_header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0 20px 0 20px;
 }
@@ -59,6 +60,7 @@ h1 {
   background-color: transparent;
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   border-bottom: #f0f3e0 solid 2px;
 }
@@ -148,4 +150,145 @@ h1 {
   flex-wrap: wrap;
   width: 65vw;
   margin: 0 20vw;
+}
+
+footer {
+  background-color: #0b0705;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: #f0f3e0 solid 2px;
+  margin-top: 50px;
+}
+
+.foter-item {
+  list-style: none;
+  margin: 8px;
+}
+
+.foter-item a {
+  text-decoration: none;
+  color: #f0f3e0;
+}
+
+.item--ULP {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.foter-list {
+  margin-right: 45px;
+}
+
+.foter-list:nth-child(2) {
+  margin-top: 30px;
+}
+
+.item--correo::before {
+  content: url(../WIDGETS/email.png);
+  padding-right: 10px;
+}
+
+.item--telefono::before {
+  content: url(../WIDGETS/telephone.png);
+  padding-right: 10px;
+}
+
+.item--ubicacion::before {
+  content: url(../WIDGETS/location.png);
+  padding-right: 10px;
+}
+
+dialog {
+  background-color: #0009;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.modal__content {
+  background-color: #f0f3e0;
+  padding: 10px 20px;
+  width: 40%;
+  margin: auto;
+  margin-top: 15vh;
+  position: relative;
+  border-radius: 10px;
+}
+
+.modal__title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.modal__text {
+  text-align: center;
+}
+
+.modal__close-button {
+  background-color: #f0f3e0;
+  color: #0b0705;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 0 4px;
+  text-decoration: none;
+  border: #0b0705 solid 1px;
+}
+
+.modal__close-button:hover {
+  background-color: #99011e;
+}
+
+/* Estilos para la ventana modal cuando no está en target */
+.modal {
+  display: none;
+}
+
+/* Estilos para mostrar la ventana modal cuando está en target */
+:target {
+  display: block;
+}
+
+.form-input {
+  box-sizing: border-box;
+  background-color: #f0f3e0;
+  font-size: 20px;
+  font-family: sans-serif;
+  width: 90%;
+  margin: 5px 5%;
+  border: none;
+  outline: none;
+  border-bottom: #0b0705 solid 2px;
+  padding: 15px 5px;
+  border-radius: 5px;
+}
+
+.form-enlace {
+  text-decoration: none;
+  color: #0b0705;
+}
+
+.form {
+  padding: 25px 5%;
+}
+
+.form-boton {
+  text-decoration: none;
+  color: #f0f3e0;
+  background-color: #99011e;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.boton {
+  text-align: center;
+  margin: 30px 0 40px 0;
+}
+
+.form-boton:hover {
+  outline: 1px solid #f0f3e0;
+  padding: 10px 15px;
+  background-color: #333;
 }

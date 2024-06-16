@@ -13,6 +13,32 @@
   </head>
   <body>
     <header>
+      <dialog id="modalWindow" class="modal">
+        <div class="modal__content">
+          <h1 class="modal__title">Iniciar sesión</h1>
+          <p class="modal__text">¿Es tu primera vez? Registrate!</p>
+          <input
+            class="form-input"
+            type="email"
+            placeholder="Correo institucional"
+          />
+          <input class="form-input" type="password" placeholder="Contraseña" />
+          <div class="form">
+            <a class="form-enlace" href="">¿Olvidaste la contraseña?</a>
+          </div>
+          <div class="boton">
+            <a class="form-boton" href="">Iniciar sesión</a>
+          </div>
+          <a href="#" class="modal__close-button">X</a>
+        </div>
+      </dialog>
+      <dialog id="modalWindow2" class="modal">
+        <div class="modal__content">
+          <h1 class="modal__title">VENTANA MODAL</h1>
+          <p class="modal__text">hola</p>
+          <a href="#" class="modal__close-button">X</a>
+        </div>
+      </dialog>
       <div class="contenedor_header">
         <div class="logo">
           <img src="../IMAGES/favicon.jpeg" class="logo_proyecto" alt="" />
@@ -36,17 +62,17 @@
       </div>
       <nav class="navbar">
         <ul class="nav-list">
-          <li class="nav-item"><a href="">Inicio</a></li>
+          <li class="nav-item"><a href="pagina-inicio.html">Inicio</a></li>
           <li class="nav-item"><a href="">Contacto</a></li>
           <li class="nav-item"><a href="">Publicaciones</a></li>
           <li class="nav-item"><a href="">Tutorías</a></li>
         </ul>
         <ul class="nav-login">
           <li class="nav-item">
-            <a href="" class="login-button">Iniciar sesión</a>
+            <a href="#modalWindow" class="login-button">Iniciar sesión</a>
           </li>
           <li class="nav-item">
-            <a href="" class="register-button">Registrarse</a>
+            <a href="#modalWindow2" class="register-button">Registrarse</a>
           </li>
         </ul>
       </nav>
@@ -94,6 +120,26 @@
         </div>
       </div>
     </section>
-    <footer></footer>
+    <footer>
+      <ul class="foter-list">
+        <li class="foter-item item--ULP"><a href="">ULP.BYTE</a></li>
+        <li class="foter-item item--correo">
+          <a href="">correoinstitucional@unilibre.edu.co</a>
+        </li>
+        <li class="foter-item item--telefono">
+          <a href="">Telefono 300XXXXXXX</a>
+        </li>
+        <li class="foter-item item--ubicacion">
+          <a href="">Universidad Libre seccional Pereira Belmonte</a>
+        </li>
+      </ul>
+      <ul class="foter-list">
+        <li class="foter-item"><a href="">Avisos legales</a></li>
+        <li class="foter-item"><a href="">Politica de privacidad</a></li>
+        <li class="foter-item">
+          <a href="">Politica de regulación de contenido</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
